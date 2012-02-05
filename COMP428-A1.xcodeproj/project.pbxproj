@@ -1,0 +1,231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35DDA88514DE1BDD00907C1C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88414DE1BDD00907C1C /* main.c */; };
+		35DDA88E14DE1C5200907C1C /* dboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88D14DE1C5200907C1C /* dboard.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35DDA87E14DE1BDD00907C1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35DDA88014DE1BDD00907C1C /* COMP428-A1-Parallel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "COMP428-A1-Parallel"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DDA88414DE1BDD00907C1C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		35DDA88C14DE1C5200907C1C /* comp428_A1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp428_A1.h; sourceTree = "<group>"; };
+		35DDA88D14DE1C5200907C1C /* dboard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dboard.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35DDA87D14DE1BDD00907C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35DDA87214DE1B7B00907C1C = {
+			isa = PBXGroup;
+			children = (
+				35DDA88314DE1BDD00907C1C /* COMP428-A1-Parallel */,
+				35DDA88114DE1BDD00907C1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35DDA88114DE1BDD00907C1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DDA88014DE1BDD00907C1C /* COMP428-A1-Parallel */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DDA88314DE1BDD00907C1C /* COMP428-A1-Parallel */ = {
+			isa = PBXGroup;
+			children = (
+				35DDA89314DE1D2D00907C1C /* Source */,
+				35DDA89414DE1D5500907C1C /* Headers */,
+			);
+			path = "COMP428-A1-Parallel";
+			sourceTree = SOURCE_ROOT;
+		};
+		35DDA89314DE1D2D00907C1C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				35DDA88414DE1BDD00907C1C /* main.c */,
+				35DDA88D14DE1C5200907C1C /* dboard.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		35DDA89414DE1D5500907C1C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				35DDA88C14DE1C5200907C1C /* comp428_A1.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35DDA87F14DE1BDD00907C1C /* COMP428-A1-Parallel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DDA88814DE1BDD00907C1C /* Build configuration list for PBXNativeTarget "COMP428-A1-Parallel" */;
+			buildPhases = (
+				35DDA87C14DE1BDD00907C1C /* Sources */,
+				35DDA87D14DE1BDD00907C1C /* Frameworks */,
+				35DDA87E14DE1BDD00907C1C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COMP428-A1-Parallel";
+			productName = "COMP428-A1-Parallel";
+			productReference = 35DDA88014DE1BDD00907C1C /* COMP428-A1-Parallel */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35DDA87414DE1B7B00907C1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Concordia;
+			};
+			buildConfigurationList = 35DDA87714DE1B7B00907C1C /* Build configuration list for PBXProject "COMP428-A1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35DDA87214DE1B7B00907C1C;
+			productRefGroup = 35DDA88114DE1BDD00907C1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35DDA87F14DE1BDD00907C1C /* COMP428-A1-Parallel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35DDA87C14DE1BDD00907C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DDA88514DE1BDD00907C1C /* main.c in Sources */,
+				35DDA88E14DE1C5200907C1C /* dboard.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		35DDA87914DE1B7C00907C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		35DDA87A14DE1B7C00907C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		35DDA88914DE1BDD00907C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lmpi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		35DDA88A14DE1BDD00907C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lmpi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35DDA87714DE1B7B00907C1C /* Build configuration list for PBXProject "COMP428-A1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DDA87914DE1B7C00907C1C /* Debug */,
+				35DDA87A14DE1B7C00907C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DDA88814DE1BDD00907C1C /* Build configuration list for PBXNativeTarget "COMP428-A1-Parallel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DDA88914DE1BDD00907C1C /* Debug */,
+				35DDA88A14DE1BDD00907C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35DDA87414DE1B7B00907C1C /* Project object */;
+}
