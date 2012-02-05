@@ -23,20 +23,19 @@ int main(int argc, char *argv[])
             numtasks,
             rc;
 
-    MPI_Status status;
-
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &numtasks);
     MPI_Comm_rank(MPI_COMM_WORLD, &taskid);
 
-    printf("MPI task %d has started...\n", taskid);
     if (taskid == MASTER) {
-        printf("Using %d tasks to compute pi (3.1415926535)\n", numtasks);
+        printf("Parallel computing of pi (3.1415926535), using %d tasks.\n", numtasks);
     }
+
+    printf("MPI task %d has started...\n", taskid);
 
     srandom(taskid);
 
-    avepi = 0;
+    avepi = 0.;
     for (int i = 0; i < ROUNDS; i++) {
         homepi = dboard(DARTS);
 

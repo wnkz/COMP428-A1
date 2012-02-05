@@ -9,7 +9,7 @@
 #ifndef COMP428_A1_comp428_A1_h
 #define COMP428_A1_comp428_A1_h
 
-#define DARTS   50000
+#define DARTS   500000
 #define ROUNDS  10
 #define MASTER  0
 

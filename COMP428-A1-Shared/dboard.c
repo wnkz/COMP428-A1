@@ -40,7 +40,7 @@ double dboard(int darts)
         /* generate random numbers for x and y coordinates */
         r = (double)random() / cconst;
         x_coord = (2.0 * r) - 1.0;
-        r = (double)random()/cconst;
+        r = (double)random() / cconst;
         y_coord = (2.0 * r) - 1.0;
 
         /* if dart lands in circle, increment score */
@@ -50,5 +50,5 @@ double dboard(int darts)
 
     /* calculate pi */
     pi = 4.0 * (double)score / (double)darts;
-    return(pi);
+    return (pi);
 }
