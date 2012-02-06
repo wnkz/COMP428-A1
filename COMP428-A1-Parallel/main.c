@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 Concordia. All rights reserved.
 //
 
-#include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <mpi.h>
 
 #include "comp428_A1.h"
 
-int main(int argc, char *argv[])
+int main(int argc, const char *argv[])
 {
     double  homepi,
             pisum,
@@ -36,7 +36,6 @@ int main(int argc, char *argv[])
 
     srandom((unsigned int)time(NULL));
 
-    avepi = 0.;
     int     i;
     for (i = 0; i < ROUNDS; i++) {
         homepi = dboard((int)(DARTS / numtasks));

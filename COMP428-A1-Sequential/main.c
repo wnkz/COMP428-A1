@@ -22,7 +22,6 @@ int main (int argc, const char *argv[])
     
     srandom((unsigned int)time(NULL));
     
-    avepi = 0.;
     int     i;
     for (i = 0; i < ROUNDS; i++) {
 
