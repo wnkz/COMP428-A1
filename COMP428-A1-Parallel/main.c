@@ -37,7 +37,8 @@ int main(int argc, char *argv[])
     srandom((unsigned int)time(NULL));
 
     avepi = 0.;
-    for (int i = 0; i < ROUNDS; i++) {
+    int     i;
+    for (i = 0; i < ROUNDS; i++) {
         homepi = dboard((int)(DARTS / numtasks));
 
         rc = MPI_Reduce(&homepi, &pisum, 1, MPI_DOUBLE, MPI_SUM, MASTER, MPI_COMM_WORLD);

@@ -12,7 +12,7 @@
 
 #include "comp428_A1.h"
 
-int main (int argc, const char * argv[])
+int main (int argc, const char *argv[])
 {
 
     double  pi,
@@ -23,7 +23,8 @@ int main (int argc, const char * argv[])
     srandom((unsigned int)time(NULL));
     
     avepi = 0.;
-    for (int i = 0; i < ROUNDS; i++) {
+    int     i;
+    for (i = 0; i < ROUNDS; i++) {
 
         pi = dboard(DARTS);
         avepi = ((avepi * i) + pi) / (i + 1);

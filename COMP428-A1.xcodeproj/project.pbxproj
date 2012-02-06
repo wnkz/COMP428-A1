@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35AB679814E06FD80093A426 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 35AB679714E06FD80093A426 /* main.c */; };
 		35DDA88514DE1BDD00907C1C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88414DE1BDD00907C1C /* main.c */; };
 		35DDA88E14DE1C5200907C1C /* dboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88D14DE1C5200907C1C /* dboard.c */; };
 		35DDA89D14DE220000907C1C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA89C14DE220000907C1C /* main.c */; };
@@ -14,6 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		35AB679214E06FD80093A426 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		35DDA87E14DE1BDD00907C1C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		35AB679414E06FD80093A426 /* COMP428-A1-Parallel-Spawn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "COMP428-A1-Parallel-Spawn"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AB679714E06FD80093A426 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		35DDA88014DE1BDD00907C1C /* COMP428-A1-Parallel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "COMP428-A1-Parallel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DDA88414DE1BDD00907C1C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		35DDA88C14DE1C5200907C1C /* comp428_A1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp428_A1.h; sourceTree = "<group>"; };
@@ -44,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35AB679114E06FD80093A426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35DDA87D14DE1BDD00907C1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,12 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AB679614E06FD80093A426 /* COMP428-A1-Parallel-Spawn */ = {
+			isa = PBXGroup;
+			children = (
+				35AB679714E06FD80093A426 /* main.c */,
+			);
+			path = "COMP428-A1-Parallel-Spawn";
+			sourceTree = "<group>";
+		};
 		35DDA87214DE1B7B00907C1C = {
 			isa = PBXGroup;
 			children = (
-				35DDA8A414DE23DD00907C1C /* Shared */,
-				35DDA88314DE1BDD00907C1C /* COMP428-A1-Parallel */,
 				35DDA89B14DE220000907C1C /* COMP428-A1-Sequential */,
+				35DDA88314DE1BDD00907C1C /* COMP428-A1-Parallel */,
+				35AB679614E06FD80093A426 /* COMP428-A1-Parallel-Spawn */,
+				35DDA8A414DE23DD00907C1C /* Shared */,
 				35DDA88114DE1BDD00907C1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +104,7 @@
 			children = (
 				35DDA88014DE1BDD00907C1C /* COMP428-A1-Parallel */,
 				35DDA89914DE220000907C1C /* COMP428-A1-Sequential */,
+				35AB679414E06FD80093A426 /* COMP428-A1-Parallel-Spawn */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +138,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		35AB679314E06FD80093A426 /* COMP428-A1-Parallel-Spawn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35AB679D14E06FD80093A426 /* Build configuration list for PBXNativeTarget "COMP428-A1-Parallel-Spawn" */;
+			buildPhases = (
+				35AB679014E06FD80093A426 /* Sources */,
+				35AB679114E06FD80093A426 /* Frameworks */,
+				35AB679214E06FD80093A426 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COMP428-A1-Parallel-Spawn";
+			productName = "COMP428-A1-Parallel-Spawn";
+			productReference = 35AB679414E06FD80093A426 /* COMP428-A1-Parallel-Spawn */;
+			productType = "com.apple.product-type.tool";
+		};
 		35DDA87F14DE1BDD00907C1C /* COMP428-A1-Parallel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35DDA88814DE1BDD00907C1C /* Build configuration list for PBXNativeTarget "COMP428-A1-Parallel" */;
@@ -166,11 +212,20 @@
 			targets = (
 				35DDA87F14DE1BDD00907C1C /* COMP428-A1-Parallel */,
 				35DDA89814DE220000907C1C /* COMP428-A1-Sequential */,
+				35AB679314E06FD80093A426 /* COMP428-A1-Parallel-Spawn */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		35AB679014E06FD80093A426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35AB679814E06FD80093A426 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35DDA87C14DE1BDD00907C1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +247,55 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		35AB679B14E06FD80093A426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		35AB679C14E06FD80093A426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		35DDA87914DE1B7C00907C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -307,6 +411,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35AB679D14E06FD80093A426 /* Build configuration list for PBXNativeTarget "COMP428-A1-Parallel-Spawn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35AB679B14E06FD80093A426 /* Debug */,
+				35AB679C14E06FD80093A426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		35DDA87714DE1B7B00907C1C /* Build configuration list for PBXProject "COMP428-A1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -323,6 +435,7 @@
 				35DDA88A14DE1BDD00907C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35DDA8A014DE220000907C1C /* Build configuration list for PBXNativeTarget "COMP428-A1-Sequential" */ = {
 			isa = XCConfigurationList;
@@ -331,6 +444,7 @@
 				35DDA8A214DE220000907C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
