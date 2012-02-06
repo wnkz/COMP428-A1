@@ -9,6 +9,7 @@
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "comp428_A1.h"
 
@@ -33,25 +34,30 @@ int main(int argc, char *argv[])
 
     printf("MPI task %d has started...\n", taskid);
 
-    srandom(taskid);
+    srandom((unsigned int)time(NULL));
 
     avepi = 0.;
     for (int i = 0; i < ROUNDS; i++) {
-        homepi = dboard(DARTS);
+        homepi = dboard((int)(DARTS / numtasks));
 
         rc = MPI_Reduce(&homepi, &pisum, 1, MPI_DOUBLE, MPI_SUM, MASTER, MPI_COMM_WORLD);
-
         if (rc != MPI_SUCCESS) {
-            printf("%d: failure on mpc_reduce\n", taskid);
+            printf("%d: failure on MPI_Reduce\n", taskid);
         }
 
         if (taskid == MASTER) {
             pi = pisum / numtasks;
             avepi = ((avepi * i) + pi) / (i + 1);
-            printf("    After %8d throws, average value of pi = %10.8f\n", (DARTS * (i + 1)), avepi);
+
+            printf("    After %.0Lf throws, average value of pi = %.10f\n", (long double)(DARTS * (i + 1)), avepi);
         }
     }
 
+    if (taskid == MASTER) {
+        printf("Parallel computing of pi 3.1415926535\n");
+        printf("                         %.10f\n", avepi);
+    }
+    
     MPI_Finalize();
 
     return (0);
