@@ -18,7 +18,7 @@ int main(int argc, const char *argv[])
     double  homepi,
             pisum,
             pi,
-            avepi;
+            avepi = 0.;
 
     int     taskid,
             numtasks,
@@ -57,7 +57,7 @@ int main(int argc, const char *argv[])
         printf("Parallel computing of pi 3.1415926535\n");
         printf("                         %.10f\n", avepi);
     }
-    
+
     MPI_Finalize();
 
     return (0);

@@ -16,12 +16,12 @@ int main (int argc, const char *argv[])
 {
 
     double  pi,
-            avepi;
+            avepi = 0.;
 
     printf("Sequential computing of pi (3.1415926535).\n");
-    
+
     srandom((unsigned int)time(NULL));
-    
+
     int     i;
     for (i = 0; i < ROUNDS; i++) {
 
@@ -33,7 +33,7 @@ int main (int argc, const char *argv[])
 
     printf("Sequential computing of pi 3.1415926535\n");
     printf("                           %.10f\n", avepi);
-    
+
     return (0);
 }
 

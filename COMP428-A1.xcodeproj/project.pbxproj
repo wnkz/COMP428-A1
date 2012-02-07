@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35C24B7314E0C2D400079E86 /* dboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88D14DE1C5200907C1C /* dboard.c */; };
+		35C24B7414E0C2D500079E86 /* dboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88D14DE1C5200907C1C /* dboard.c */; };
 		35DA586614E0891F0008A764 /* master.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DA585514E088A80008A764 /* master.c */; };
 		35DA587514E089460008A764 /* slave.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DA585614E088B00008A764 /* slave.c */; };
 		35DDA88514DE1BDD00907C1C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 35DDA88414DE1BDD00907C1C /* main.c */; };
@@ -65,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		35C24B7114E09B1C00079E86 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		35DA585514E088A80008A764 /* master.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = master.c; sourceTree = "<group>"; };
 		35DA585614E088B00008A764 /* slave.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slave.c; sourceTree = "<group>"; };
 		35DA585C14E088F90008A764 /* COMP428-A1-Parallel-Spawn-Master */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "COMP428-A1-Parallel-Spawn-Master"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +124,7 @@
 		35DDA87214DE1B7B00907C1C = {
 			isa = PBXGroup;
 			children = (
+				35C24B7114E09B1C00079E86 /* Makefile */,
 				35DDA89B14DE220000907C1C /* COMP428-A1-Sequential */,
 				35DDA88314DE1BDD00907C1C /* COMP428-A1-Parallel */,
 				35AB679614E06FD80093A426 /* COMP428-A1-Parallel-Spawn */,
@@ -273,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35DA586614E0891F0008A764 /* master.c in Sources */,
+				35C24B7414E0C2D500079E86 /* dboard.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35DA587514E089460008A764 /* slave.c in Sources */,
+				35C24B7314E0C2D400079E86 /* dboard.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
