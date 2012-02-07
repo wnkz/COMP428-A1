@@ -24,7 +24,7 @@ int main(int argc, const char *argv[])
             numtasks,
             rc;
 
-    MPI_Init(&argc, &argv);
+    MPI_Init(&argc, (char***)&argv);
     MPI_Comm_size(MPI_COMM_WORLD, &numtasks);
     MPI_Comm_rank(MPI_COMM_WORLD, &taskid);
 
@@ -42,14 +42,14 @@ int main(int argc, const char *argv[])
 
         rc = MPI_Reduce(&homepi, &pisum, 1, MPI_DOUBLE, MPI_SUM, MASTER, MPI_COMM_WORLD);
         if (rc != MPI_SUCCESS) {
-            printf("%d: failure on MPI_Reduce\n", taskid);
+            fprintf(stderr, "%d: failure on MPI_Reduce\n", taskid);
         }
 
         if (taskid == MASTER) {
             pi = pisum / numtasks;
             avepi = ((avepi * i) + pi) / (i + 1);
 
-            printf("    After %.0Lf throws, average value of pi = %.10f\n", (long double)(DARTS * (i + 1)), avepi);
+            // printf("    After %.0Lf throws, average value of pi = %.10f\n", (long double)(DARTS * (i + 1)), avepi);
         }
     }
 

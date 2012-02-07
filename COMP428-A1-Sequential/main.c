@@ -28,7 +28,7 @@ int main (int argc, const char *argv[])
         pi = dboard(DARTS);
         avepi = ((avepi * i) + pi) / (i + 1);
 
-        printf("    After %.0Lf throws, average value of pi = %10.8f\n", (long double)(DARTS * (i + 1)), avepi);
+        // printf("    After %.0Lf throws, average value of pi = %10.8f\n", (long double)(DARTS * (i + 1)), avepi);
     }
 
     printf("Sequential computing of pi 3.1415926535\n");

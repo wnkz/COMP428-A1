@@ -9,8 +9,8 @@
 #ifndef COMP428_A1_comp428_A1_h
 #define COMP428_A1_comp428_A1_h
 
-#define DARTS   500000
-#define ROUNDS  100
+#define DARTS   5000000
+#define ROUNDS  1000
 #define MASTER  0
 
 #define SQR(x)  ((x) * (x))
